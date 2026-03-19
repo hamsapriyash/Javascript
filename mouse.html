@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changecolor(){
+            document.getElementById("demo").style.color="red";
+        }
+        function changefont(){
+            document.getElementById("cd").style.fontFamily="cursive";
+        }
+        function changeimage(){
+            document.getElementById("ci").src="radha.jpg";
+        }
+        function changewealth(){
+            document.getElementById("ci").src="wealth.jpg";
+        }
+        function will(){
+           document.getElementById("we").innerHTML="THANKYOU FOR BLESSING";
+        } 
+    </script>
+</head>
+<body>
+    <br><br>
+    <span onmouseover="changecolor()">
+        <h1 id="demo" style="color:blue; display:inline">Welocome to Universe Blessing</h1>
+    </span>
+    <span onmouseenter="changefont()">
+        <h1 id="cd" style="color:aqua;">I am blessed with Money</h1>
+    </span>
+    <div onmouseover="changeimage()" onmouseout="changewealth()">
+        <img id="ci" src="blessing.jpg" height="250px" width="150px">
+    </div><br><br>
+    <div id="we">
+        <p>I am blessed with good health</p>
+    <button type="button"  onclick="will()">Click</button>
+    </div>
+</body>
+</html>

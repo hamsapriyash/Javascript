@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>By Class Name</h1>
+    <div class="example">
+        <p>This is a paragraph</p>
+    </div>
+    <div class="example">
+        <p>This is a paragraph</p>
+    </div>
+     <div class="examplecolor">
+        <p>This is a paragraph</p>
+    </div>
+    <div class="examplecolor">
+        <p>This is a paragraph</p>
+    </div>
+    <script>
+        const collection=document.getElementsByClassName("examplecolor")
+        for(let i=0;i<collection.length;i++){
+            collection[i].style.backgroundColor="red";
+            collection[i].style.color="white";
+        }
+        const collection1=document.getElementsByClassName("example")
+            collection1[0].style.backgroundColor="blue";
+            collection1[0].style.color="white";
+        
+    </script>
+    
+</body>
+</html>

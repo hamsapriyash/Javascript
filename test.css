@@ -1,0 +1,24 @@
+ body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+        margin: 0;}
+.container {
+        text-align: center; 
+        background-color: #e8f5e9;
+        padding:15px;
+        width:200px;
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+        font-family: sans-serif;
+        margin: 20px;
+        box-shadow: 4px 4px 0px #2e7032;
+        transition:0.3s;
+    } 
+.container:hover{
+    background-color: bisque;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 4px 4px 0px #000000;
+    transform:scale(1.1);
+}   
