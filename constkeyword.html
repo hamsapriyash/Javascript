@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Keyword & Within block level code</title>
+     <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 200px;
+            border: 5px solid black;
+            padding: 100px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const pi=3.14;
+        document.write("Value of pi is "+pi);
+        const x=20;{
+            const x="Hello";
+            document.write("<br>"+"Value of x is "+x);
+            {
+                    const x=true;
+                    document.write("<br>"+"Value of x is "+x);
+            }
+            {
+                const pi=3;
+                document.write("<br>"+"Value of pi is "+pi);
+            }
+            alert("Value of x within block is "+x);
+        }
+        alert("Value of x outside block is "+x);
+        alert("Value of pi is "+pi);
+    </script>
+</body>
+</html>

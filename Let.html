@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let Keyword</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 200px;
+            border: 5px solid black;
+            padding: 100px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var name="UniverseTq";
+        function hello(){
+            let nm="Wealth";
+            document.write("Local variable name is "+ nm+"<br>");
+            alert("Global variable name is "+ window.name);
+        }
+        hello();
+        document.write("Global variable name is "+ name+"<br>");
+        document.write("Local variable name is "+ nm);
+    </script>
+</body>
+</html>

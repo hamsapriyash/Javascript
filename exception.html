@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Handling</title>
+    <script>
+        var txt="";
+        function message(){
+            try{
+                alertA("Welcome to UniverseTq");
+            }
+            catch(err){
+                txt="There was the error on this page.\n\n";
+                txt+="Error description: "+err.message+"\n\n";
+                txt+="Click ok to continue.\n\n";
+                alert(txt);
+            }
+            finally{
+                alert("Program Excecuted Successfully");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="message()">Click me</button>
+</body>
+</html>
