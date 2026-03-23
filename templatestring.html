@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template String</title>
+    <script>
+        function myFunction(fname,lname,age){
+            var fullname=`Your First Name is ${fname} And Last Name is ${lname}`;
+            document.write(fullname+"<br>" +"<br>");
+            document.write(`You are in your ${age} world`);
+        }
+    </script>
+</head>
+<body>
+    Welcome to Your World
+    <br>
+    Press button to see template string work
+    <br><br>
+    <button onclick="myFunction('Hamsa','Hiremath','18')">Try It</button>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        var result;
+        const number1=parseFloat(prompt("Enter First Number?"));
+        const number2=parseFloat(prompt("Enter Second Number?"));
+        const operator=prompt("Enter operator (either +,-,*or/)");
+        switch(operator){
+            case '+':
+                result=number1+number2;
+                alert("Result is "+result);
+                break;
+            case '-':
+                result=number1-number2;
+                alert("Result is "+result);
+                break;
+            case '*':
+                 result=number1*number2;
+                alert("Result is "+result);
+                break;
+            case '/':
+                 result=number1/number2;
+                alert("Result is "+result);
+                break;
+            default:
+                alert("Invalid Operator Used");
+                console.log("Invalid operator");
+                break;
+        }
+    </script>
+</body>
+</html>

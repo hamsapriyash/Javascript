@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student performance</title>
+    <script>
+        function show(){
+            var x=document.f1.t1.value;
+            console.log(x);
+            if(x>=35 && x<=100){
+                console.log("Passed");
+                alert("You Have Passed");
+                return true;
+            }
+            else{
+                console.log("Failed");
+                alert("You have failed or Invalid Number Entered");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h2>Welcome to your result</h2>
+        <br>
+        <form name="f1">
+            <br>
+            <legend>Enter Your Marks & Press click to see ur result</legend>
+            <input type="text" name="t1">
+            <br>
+            <input type="button" name="b1" value="result" onclick="return show();">
+            <br>
+        </form>
+    </center>
+
+    
+</body>
+</html>
